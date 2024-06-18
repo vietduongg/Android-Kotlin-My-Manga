@@ -21,4 +21,6 @@ dependencyResolutionManagement {
 
 rootProject.name = "mymangaapp"
 include(":app")
- 
+include(":domain")
+include(":data")
+include(":core")
