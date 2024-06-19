@@ -1,12 +1,6 @@
 pluginManagement {
     repositories {
-        google {
-            content {
-                includeGroupByRegex("com\\.android.*")
-                includeGroupByRegex("com\\.google.*")
-                includeGroupByRegex("androidx.*")
-            }
-        }
+        google()
         mavenCentral()
         gradlePluginPortal()
     }
@@ -18,9 +12,8 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-
-rootProject.name = "mymangaapp"
+rootProject.name = "MyMangaApp"
 include(":app")
-include(":domain")
-include(":data")
 include(":core")
+include(":data")
+include(":domain")
